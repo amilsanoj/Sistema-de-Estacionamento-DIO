@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sistema-de-Estacionamento", "Sistema-de-Estacionamento\Sistema-de-Estacionamento.csproj", "{FFBA122E-BA0E-4888-A337-620A4641BCCB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FFBA122E-BA0E-4888-A337-620A4641BCCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFBA122E-BA0E-4888-A337-620A4641BCCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFBA122E-BA0E-4888-A337-620A4641BCCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFBA122E-BA0E-4888-A337-620A4641BCCB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
