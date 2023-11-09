@@ -44,13 +44,13 @@ public class Estacionamento
             Console.WriteLine($"Digite o numero de horas que o veículo permaneceu no estacionamento(Hora Inteira, caso " +
                               $"tenha ficado menos de 1 hora digite 0)");
             decimal horas = decimal.Parse(Console.ReadLine()!);
-            Console.WriteLine($"Digite o numero de minutos que o veículo permaneceu no estacionamento(Minutos inteiros, " +
-                              $"caso não tenha minutos além de 1 hora digite 0)");
+            Console.WriteLine(
+                $"Digite o numero de minutos que o veículo permaneceu no estacionamento(Minutos inteiros) ");
             decimal minutos = Decimal.Parse(Console.ReadLine()!);
             if (minutos != 0 || horas != 0)
             {
                 Console.WriteLine($"O valor a ser pago pela guarda do veículo {placa} por {horas} horas e {minutos} " +
-                                  $"minutos é R${CalcularPreço(horas, minutos)} ");
+                                  $"minutos é R${Math.Round(CalcularPreço(horas, minutos), 2)} ");
                 Veiculos.Remove(placa);
             }
         }
@@ -83,7 +83,7 @@ public class Estacionamento
         {
             return PreçoInicial;
         }
-        return PreçoInicial + PreçoPorHora * ((minutos / 60) + horas);
+        return PreçoInicial + PreçoPorHora * (((minutos / 60)-(decimal)0.5) + horas);
         
     }
         
